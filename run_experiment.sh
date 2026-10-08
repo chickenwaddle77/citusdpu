@@ -7,9 +7,9 @@ echo "============================================="
 
 # Ensure directories exist
 sudo mkdir -p /mnt/dataset
-sudo chown -R $USER:$USER /mnt/dataset
+sudo chown -R $USER:$(id -gn $USER) /mnt/dataset
 sudo mkdir -p /opt/dpu_benchmark
-sudo chown -R $USER:$USER /opt/dpu_benchmark
+sudo chown -R $USER:$(id -gn $USER) /opt/dpu_benchmark
 cp run_wiki_ingestion.py run_wiki_query.py run_parquet_query.py /opt/dpu_benchmark/
 
 # 1. Download Datasets to Block Store
