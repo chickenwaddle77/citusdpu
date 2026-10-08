@@ -2,3 +2,6 @@ timestamp,query_name,hardware_state,iterations,avg_time_sec,min_time_sec,max_tim
 2026-10-08 10:49:38,Wiki XML Ingestion (LZ4 Compression),Baseline (No DPU),1,29.3434,29.3434,29.3434
 2026-10-08 10:49:39,Wiki Full-Text Search (Citus Decompression),Baseline (No DPU),5,0.0158,0.0119,0.0181
 2026-10-08 10:56:30,ClickBench String Scan (Parquet FDW Decompression),Baseline (No DPU),5,68.6237,68.4397,68.9809
+2026-10-08 13:03:10,Wiki XML Ingestion (LZ4 Compression),Baseline (No DPU),1,29.4542,29.4542,29.4542
+2026-10-08 13:03:15,Wiki Full-Text Search (Citus Decompression),Baseline (No DPU),5,0.0181,0.0166,0.0190
+2026-10-08 13:10:13,ClickBench String Scan (Parquet FDW Decompression),Baseline (No DPU),5,68.7540,68.6581,68.9524

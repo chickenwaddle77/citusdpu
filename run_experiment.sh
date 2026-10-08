@@ -40,6 +40,9 @@ DSTAT_PID=$!
 trap 'kill $DSTAT_PID 2>/dev/null || true' EXIT
 echo "  -> dstat running in background (PID: $DSTAT_PID)"
 
+echo "Sleeping for 5 seconds..."
+sleep 5
+
 # 3. Execute Python Benchmarks
 echo "[3/3] Executing Benchmarks..."
 echo "--- START: WIKI INGESTION ---" >> /opt/dpu_benchmark/system_metrics.csv
@@ -63,10 +66,10 @@ echo "--- END: PARQUET QUERY ---" >> /opt/dpu_benchmark/system_metrics.csv
 # Cleanup is handled by the trap on EXIT
 echo "  -> Benchmarks finished."
 
-# Zip results to the dataset drive for easy extraction
-tar -czvf /mnt/dataset/experiment_results.tar.gz /opt/dpu_benchmark/benchmark_results.csv /opt/dpu_benchmark/system_metrics.csv
+# Zip results to the current directory for easy extraction
+tar -czvf ./experiment_results.tar.gz /opt/dpu_benchmark/benchmark_results.csv /opt/dpu_benchmark/system_metrics.csv
 
 echo "============================================="
 echo " Experiment Complete!"
-echo " Results archived at: /mnt/dataset/experiment_results.tar.gz"
+echo " Results archived at: ./experiment_results.tar.gz"
 echo "============================================="
