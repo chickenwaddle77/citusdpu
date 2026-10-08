@@ -42,9 +42,23 @@ echo "  -> dstat running in background (PID: $DSTAT_PID)"
 
 # 3. Execute Python Benchmarks
 echo "[3/3] Executing Benchmarks..."
+echo "--- START: WIKI INGESTION ---" >> /opt/dpu_benchmark/system_metrics.csv
 python3 /opt/dpu_benchmark/run_wiki_ingestion.py
+echo "--- END: WIKI INGESTION ---" >> /opt/dpu_benchmark/system_metrics.csv
+
+echo "Sleeping for 5 seconds..."
+sleep 5
+
+echo "--- START: WIKI QUERY ---" >> /opt/dpu_benchmark/system_metrics.csv
 python3 /opt/dpu_benchmark/run_wiki_query.py
+echo "--- END: WIKI QUERY ---" >> /opt/dpu_benchmark/system_metrics.csv
+
+echo "Sleeping for 5 seconds..."
+sleep 5
+
+echo "--- START: PARQUET QUERY ---" >> /opt/dpu_benchmark/system_metrics.csv
 python3 /opt/dpu_benchmark/run_parquet_query.py
+echo "--- END: PARQUET QUERY ---" >> /opt/dpu_benchmark/system_metrics.csv
 
 # Cleanup is handled by the trap on EXIT
 echo "  -> Benchmarks finished."
