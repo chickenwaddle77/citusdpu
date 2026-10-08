@@ -1,0 +1,619 @@
+Hit:1 http://repos.emulab.net/emulab/ubuntu noble InRelease
+Hit:2 http://apt.postgresql.org/pub/repos/apt noble-pgdg InRelease
+Hit:3 http://us.archive.ubuntu.com/ubuntu noble InRelease
+Hit:4 http://us.archive.ubuntu.com/ubuntu noble-updates InRelease
+Hit:6 http://us.archive.ubuntu.com/ubuntu noble-backports InRelease
+Hit:7 http://security.ubuntu.com/ubuntu noble-security InRelease
+Hit:5 https://repos.citusdata.com/community/ubuntu noble InRelease
+Reading package lists...
+W: http://apt.postgresql.org/pub/repos/apt/dists/noble-pgdg/InRelease: Key is stored in legacy trusted.gpg keyring (/etc/apt/trusted.gpg), see the DEPRECATION section in apt-key(8) for details.
+Reading package lists...
+Building dependency tree...
+Reading state information...
+ca-certificates is already the newest version (20260601~24.04.1).
+lsb-release is already the newest version (12.0-2).
+lsb-release set to manually installed.
+wget is already the newest version (1.21.4-1ubuntu4.5).
+wget set to manually installed.
+build-essential is already the newest version (12.10ubuntu1).
+build-essential set to manually installed.
+git is already the newest version (1:2.43.0-1ubuntu7.3).
+git set to manually installed.
+postgresql-server-dev-16 is already the newest version (16.15-1.pgdg24.04+2).
+The following additional packages will be installed:
+   libpkgconf3 (1.8.1-2build1)
+   pkgconf (1.8.1-2build1)
+   pkgconf-bin (1.8.1-2build1)
+The following NEW packages will be installed:
+   libpkgconf3 (1.8.1-2build1)
+   pkg-config (1.8.1-2build1)
+   pkgconf (1.8.1-2build1)
+   pkgconf-bin (1.8.1-2build1)
+0 upgraded, 4 newly installed, 0 to remove and 126 not upgraded.
+Need to get 75.4 kB of archives.
+After this operation, 283 kB of additional disk space will be used.
+Get:1 http://us.archive.ubuntu.com/ubuntu noble/main amd64 libpkgconf3 amd64 1.8.1-2build1 [30.7 kB]
+Get:2 http://us.archive.ubuntu.com/ubuntu noble/main amd64 pkgconf-bin amd64 1.8.1-2build1 [20.7 kB]
+Get:3 http://us.archive.ubuntu.com/ubuntu noble/main amd64 pkgconf amd64 1.8.1-2build1 [16.8 kB]
+Get:4 http://us.archive.ubuntu.com/ubuntu noble/main amd64 pkg-config amd64 1.8.1-2build1 [7,264 B]
+debconf: unable to initialize frontend: Dialog
+debconf: (Dialog frontend will not work on a dumb terminal, an emacs shell buffer, or without a controlling terminal.)
+debconf: falling back to frontend: Readline
+debconf: unable to initialize frontend: Readline
+debconf: (This frontend requires a controlling tty.)
+debconf: falling back to frontend: Teletype
+dpkg-preconfigure: unable to re-open stdin: 
+Fetched 75.4 kB in 0s (205 kB/s)
+Selecting previously unselected package libpkgconf3:amd64.
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 121433 files and directories currently installed.)
+Preparing to unpack .../libpkgconf3_1.8.1-2build1_amd64.deb ...
+Unpacking libpkgconf3:amd64 (1.8.1-2build1) ...
+Selecting previously unselected package pkgconf-bin.
+Preparing to unpack .../pkgconf-bin_1.8.1-2build1_amd64.deb ...
+Unpacking pkgconf-bin (1.8.1-2build1) ...
+Selecting previously unselected package pkgconf:amd64.
+Preparing to unpack .../pkgconf_1.8.1-2build1_amd64.deb ...
+Unpacking pkgconf:amd64 (1.8.1-2build1) ...
+Selecting previously unselected package pkg-config:amd64.
+Preparing to unpack .../pkg-config_1.8.1-2build1_amd64.deb ...
+Unpacking pkg-config:amd64 (1.8.1-2build1) ...
+Setting up libpkgconf3:amd64 (1.8.1-2build1) ...
+Setting up pkgconf-bin (1.8.1-2build1) ...
+Setting up pkgconf:amd64 (1.8.1-2build1) ...
+Setting up pkg-config:amd64 (1.8.1-2build1) ...
+Processing triggers for man-db (2.12.0-4build2) ...
+Processing triggers for libc-bin (2.39-0ubuntu8.9) ...
+debconf: unable to initialize frontend: Dialog
+debconf: (Dialog frontend will not work on a dumb terminal, an emacs shell buffer, or without a controlling terminal.)
+debconf: falling back to frontend: Readline
+debconf: unable to initialize frontend: Readline
+debconf: (This frontend requires a controlling tty.)
+debconf: falling back to frontend: Teletype
+
+Running kernel seems to be up-to-date.
+
+The processor microcode seems to be up-to-date.
+
+Restarting services...
+ /etc/needrestart/restart.d/systemd-manager
+ systemctl restart chrony.service cron.service fwupd.service multipathd.service polkit.service postgresql@16-main.service pubsubd.service rpcbind.service rsyslog.service smartmontools.service ssh.service systemd-journald.service systemd-networkd.service systemd-resolved.service systemd-udevd.service testbed.service udisks2.service upower.service
+
+Service restarts being deferred:
+ /etc/needrestart/restart.d/dbus.service
+ systemctl restart getty@tty1.service
+ systemctl restart networkd-dispatcher.service
+ systemctl restart serial-getty@ttyS0.service
+ systemctl restart systemd-logind.service
+ systemctl restart unattended-upgrades.service
+
+No containers need to be restarted.
+
+User sessions running outdated binaries:
+ linyu66 @ user manager service: systemd[16389]
+
+No VM guests are running outdated hypervisor (qemu) binaries on this host.
+--2026-10-08 10:33:22--  https://apache.jfrog.io/artifactory/arrow/ubuntu/apache-arrow-apt-source-latest-noble.deb
+Resolving apache.jfrog.io (apache.jfrog.io)... 52.38.204.99, 54.186.113.72, 52.34.198.224
+Connecting to apache.jfrog.io (apache.jfrog.io)|52.38.204.99|:443... connected.
+HTTP request sent, awaiting response... 200 
+Length: 82068 (80K) [application/x-debian-package]
+Saving to: ‘apache-arrow-apt-source-latest-noble.deb’
+
+     0K .......... .Reading package lists............ .......... .......... .......... 62%  476K 0s
+    50K .......... .......... ..........                      100% 34.0M=0.1s
+
+2026-10-08 10:33:23 (757 KB/s) - ‘apache-arrow-apt-source-latest-noble.deb’ saved [82068/82068]
+
+
+Building dependency tree...
+Reading state information...
+The following NEW packages will be installed:
+   apache-arrow-apt-source (25.0.1-1)
+0 upgraded, 1 newly installed, 0 to remove and 126 not upgraded.
+Need to get 0 B/82.1 kB of archives.
+After this operation, 124 kB of additional disk space will be used.
+Get:1 /users/linyu66/apache-arrow-apt-source-latest-noble.deb apache-arrow-apt-source all 25.0.1-1 [82.1 kB]
+debconf: unable to initialize frontend: Dialog
+debconf: (Dialog frontend will not work on a dumb terminal, an emacs shell buffer, or without a controlling terminal.)
+debconf: falling back to frontend: Readline
+debconf: unable to initialize frontend: Readline
+debconf: (This frontend requires a controlling tty.)
+debconf: falling back to frontend: Teletype
+dpkg-preconfigure: unable to re-open stdin: 
+Selecting previously unselected package apache-arrow-apt-source.
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 121465 files and directories currently installed.)
+Preparing to unpack .../apache-arrow-apt-source-latest-noble.deb ...
+Unpacking apache-arrow-apt-source (25.0.1-1) ...
+Setting up apache-arrow-apt-source (25.0.1-1) ...
+debconf: unable to initialize frontend: Dialog
+debconf: (Dialog frontend will not work on a dumb terminal, an emacs shell buffer, or without a controlling terminal.)
+debconf: falling back to frontend: Readline
+debconf: unable to initialize frontend: Readline
+debconf: (This frontend requires a controlling tty.)
+debconf: falling back to frontend: Teletype
+
+Running kernel seems to be up-to-date.
+
+The processor microcode seems to be up-to-date.
+
+Restarting services...
+
+Service restarts being deferred:
+ /etc/needrestart/restart.d/dbus.service
+ systemctl restart getty@tty1.service
+ systemctl restart networkd-dispatcher.service
+ systemctl restart serial-getty@ttyS0.service
+ systemctl restart systemd-logind.service
+ systemctl restart unattended-upgrades.service
+
+No containers need to be restarted.
+
+User sessions running outdated binaries:
+ linyu66 @ user manager service: systemd[16389]
+
+No VM guests are running outdated hypervisor (qemu) binaries on this host.
+Hit:1 http://repos.emulab.net/emulab/ubuntu noble InRelease
+Hit:2 http://apt.postgresql.org/pub/repos/apt noble-pgdg InRelease
+Hit:4 http://security.ubuntu.com/ubuntu noble-security InRelease
+Hit:3 https://repos.citusdata.com/community/ubuntu noble InRelease
+Hit:5 http://us.archive.ubuntu.com/ubuntu noble InRelease
+Get:6 https://packages.apache.org/artifactory/arrow/ubuntu noble InRelease [7,291 B]
+Hit:7 http://us.archive.ubuntu.com/ubuntu noble-updates InRelease
+Hit:8 http://us.archive.ubuntu.com/ubuntu noble-backports InRelease
+Get:9 https://packages.apache.org/artifactory/arrow/ubuntu noble/main Sources [20.2 kB]
+Get:10 https://packages.apache.org/artifactory/arrow/ubuntu noble/main amd64 Packages [172 kB]
+Fetched 199 kB in 2s (114 kB/s)
+Reading package lists...
+W: http://apt.postgresql.org/pub/repos/apt/dists/noble-pgdg/InRelease: Key is stored in legacy trusted.gpg keyring (/etc/apt/trusted.gpg), see the DEPRECATION section in apt-key(8) for details.
+Reading package lists...
+Building dependency tree...
+Reading state information...
+The following additional packages will be installed:
+   bzip2 (1.0.8-5.1ubuntu0.1)
+   bzip2-doc (1.0.8-5.1ubuntu0.1)
+   curl (8.5.0-2ubuntu10.15)
+   libabsl-dev (20220623.1-3.1ubuntu3.2)
+   libabsl20220623t64 (20220623.1-3.1ubuntu3.2)
+   libarrow2500 (25.0.1-1)
+   libbrotli-dev (1.1.0-2build2)
+   libbz2-1.0 (1.0.8-5.1ubuntu0.1)
+   libbz2-dev (1.0.8-5.1ubuntu0.1)
+   libc-ares-dev (1.27.0-1.0ubuntu1)
+   libcares2 (1.27.0-1.0ubuntu1)
+   libcurl3t64-gnutls (8.5.0-2ubuntu10.15)
+   libcurl4-openssl-dev (8.5.0-2ubuntu10.15)
+   libcurl4t64 (8.5.0-2ubuntu10.15)
+   libdouble-conversion3 (3.3.0-1build1)
+   libgrpc29t64 (1.51.1-4.1build5)
+   liblz4-dev (1.9.4-1build1.1)
+   libparquet2500 (25.0.1-1)
+   libpcre2-16-0 (10.42-4ubuntu2.1)
+   libprotobuf-dev (3.21.12-8.2ubuntu0.3)
+   libprotobuf-lite32t64 (3.21.12-8.2ubuntu0.3)
+   libprotobuf32t64 (3.21.12-8.2ubuntu0.3)
+   libprotoc-dev (3.21.12-8.2ubuntu0.3)
+   libprotoc32t64 (3.21.12-8.2ubuntu0.3)
+   libqt5core5t64 (5.15.13+dfsg-1ubuntu1)
+   libqt5dbus5t64 (5.15.13+dfsg-1ubuntu1)
+   libqt5network5t64 (5.15.13+dfsg-1ubuntu1)
+   libre2-10 (20230301-3build1)
+   libre2-dev (20230301-3build1)
+   libsnappy-dev (1.1.10-1build1)
+   libsnappy1v5 (1.1.10-1build1)
+   libthrift-0.19.0t64 (0.19.0-2.1build5)
+   libthrift-dev (0.19.0-2.1build5)
+   libutf8proc-dev (2.9.0-1build1)
+   libutf8proc3 (2.9.0-1build1)
+   libxxhash-dev (0.8.2-2build1)
+   libzstd-dev (1.5.5+dfsg2-2build1.1)
+   nlohmann-json3-dev (3.11.3-1)
+   protobuf-compiler (3.21.12-8.2ubuntu0.3)
+   protobuf-compiler-grpc (1.51.1-4.1build5)
+   qttranslations5-l10n (5.15.13-1)
+   zlib1g (1:1.3.dfsg-3.1ubuntu2.2)
+   zlib1g-dev (1:1.3.dfsg-3.1ubuntu2.2)
+Suggested packages:
+   libcurl4-doc (8.5.0-2ubuntu10.15)
+   libidn-dev (1.42-1ubuntu0.1)
+   libkrb5-dev (1.20.1-6ubuntu2.10)
+   libldap2-dev (2.6.10+dfsg-0ubuntu0.24.04.1)
+   librtmp-dev (2.4+20151223.gitfa8646d.1-2build7)
+   libssh2-1-dev (1.11.0-4.1ubuntu0.24.04.4)
+   protobuf-mode-el
+The following NEW packages will be installed:
+   bzip2-doc (1.0.8-5.1ubuntu0.1)
+   libabsl-dev (20220623.1-3.1ubuntu3.2)
+   libabsl20220623t64 (20220623.1-3.1ubuntu3.2)
+   libarrow-dev (25.0.1-1)
+   libarrow2500 (25.0.1-1)
+   libbrotli-dev (1.1.0-2build2)
+   libbz2-dev (1.0.8-5.1ubuntu0.1)
+   libc-ares-dev (1.27.0-1.0ubuntu1)
+   libcares2 (1.27.0-1.0ubuntu1)
+   libcurl4-openssl-dev (8.5.0-2ubuntu10.15)
+   libdouble-conversion3 (3.3.0-1build1)
+   libgrpc29t64 (1.51.1-4.1build5)
+   liblz4-dev (1.9.4-1build1.1)
+   libparquet-dev (25.0.1-1)
+   libparquet2500 (25.0.1-1)
+   libpcre2-16-0 (10.42-4ubuntu2.1)
+   libprotobuf-dev (3.21.12-8.2ubuntu0.3)
+   libprotobuf-lite32t64 (3.21.12-8.2ubuntu0.3)
+   libprotobuf32t64 (3.21.12-8.2ubuntu0.3)
+   libprotoc-dev (3.21.12-8.2ubuntu0.3)
+   libprotoc32t64 (3.21.12-8.2ubuntu0.3)
+   libqt5core5t64 (5.15.13+dfsg-1ubuntu1)
+   libqt5dbus5t64 (5.15.13+dfsg-1ubuntu1)
+   libqt5network5t64 (5.15.13+dfsg-1ubuntu1)
+   libre2-10 (20230301-3build1)
+   libre2-dev (20230301-3build1)
+   libsnappy-dev (1.1.10-1build1)
+   libsnappy1v5 (1.1.10-1build1)
+   libthrift-0.19.0t64 (0.19.0-2.1build5)
+   libthrift-dev (0.19.0-2.1build5)
+   libutf8proc-dev (2.9.0-1build1)
+   libutf8proc3 (2.9.0-1build1)
+   libxxhash-dev (0.8.2-2build1)
+   libzstd-dev (1.5.5+dfsg2-2build1.1)
+   nlohmann-json3-dev (3.11.3-1)
+   protobuf-compiler (3.21.12-8.2ubuntu0.3)
+   protobuf-compiler-grpc (1.51.1-4.1build5)
+   qttranslations5-l10n (5.15.13-1)
+   zlib1g-dev (1:1.3.dfsg-3.1ubuntu2.2)
+The following packages will be upgraded:
+   bzip2 (1.0.8-5.1build0.1 => 1.0.8-5.1ubuntu0.1)
+   curl (8.5.0-2ubuntu10.12 => 8.5.0-2ubuntu10.15)
+   libbz2-1.0 (1.0.8-5.1build0.1 => 1.0.8-5.1ubuntu0.1)
+   libcurl3t64-gnutls (8.5.0-2ubuntu10.12 => 8.5.0-2ubuntu10.15)
+   libcurl4t64 (8.5.0-2ubuntu10.12 => 8.5.0-2ubuntu10.15)
+   zlib1g (1:1.3.dfsg-3.1ubuntu2.1 => 1:1.3.dfsg-3.1ubuntu2.2)
+6 upgraded, 39 newly installed, 0 to remove and 120 not upgraded.
+Need to get 43.1 MB of archives.
+After this operation, 237 MB of additional disk space will be used.
+Get:1 http://us.archive.ubuntu.com/ubuntu noble-updates/main amd64 bzip2 amd64 1.0.8-5.1ubuntu0.1 [34.6 kB]
+Get:6 http://us.archive.ubuntu.com/ubuntu noble-updates/main amd64 libbz2-1.0 amd64 1.0.8-5.1ubuntu0.1 [34.6 kB]
+Get:7 http://us.archive.ubuntu.com/ubuntu noble-updates/main amd64 zlib1g amd64 1:1.3.dfsg-3.1ubuntu2.2 [63.0 kB]
+Get:8 http://us.archive.ubuntu.com/ubuntu noble-updates/main amd64 bzip2-doc all 1.0.8-5.1ubuntu0.1 [499 kB]
+Get:9 http://us.archive.ubuntu.com/ubuntu noble-updates/main amd64 curl amd64 8.5.0-2ubuntu10.15 [227 kB]
+Get:10 http://us.archive.ubuntu.com/ubuntu noble-updates/main amd64 libcurl4t64 amd64 8.5.0-2ubuntu10.15 [343 kB]
+Get:11 http://us.archive.ubuntu.com/ubuntu noble-updates/main amd64 libabsl20220623t64 amd64 20220623.1-3.1ubuntu3.2 [423 kB]
+Get:12 http://us.archive.ubuntu.com/ubuntu noble-updates/main amd64 libabsl-dev amd64 20220623.1-3.1ubuntu3.2 [1,020 kB]
+Get:2 https://packages.apache.org/artifactory/arrow/ubuntu noble/main amd64 libarrow2500 amd64 25.0.1-1 [7,078 kB]
+Get:13 http://us.archive.ubuntu.com/ubuntu noble-updates/main amd64 libprotobuf32t64 amd64 3.21.12-8.2ubuntu0.3 [923 kB]
+Get:14 http://us.archive.ubuntu.com/ubuntu noble/main amd64 libsnappy1v5 amd64 1.1.10-1build1 [28.6 kB]
+Get:15 http://us.archive.ubuntu.com/ubuntu noble/main amd64 libbrotli-dev amd64 1.1.0-2build2 [353 kB]
+Get:16 http://us.archive.ubuntu.com/ubuntu noble-updates/main amd64 libbz2-dev amd64 1.0.8-5.1ubuntu0.1 [33.6 kB]
+Get:17 http://us.archive.ubuntu.com/ubuntu noble/main amd64 libcares2 amd64 1.27.0-1.0ubuntu1 [73.7 kB]
+Get:18 http://us.archive.ubuntu.com/ubuntu noble/main amd64 libc-ares-dev amd64 1.27.0-1.0ubuntu1 [189 kB]
+Get:19 http://us.archive.ubuntu.com/ubuntu noble-updates/main amd64 libcurl4-openssl-dev amd64 8.5.0-2ubuntu10.15 [446 kB]
+Get:20 http://us.archive.ubuntu.com/ubuntu noble-updates/main amd64 liblz4-dev amd64 1.9.4-1build1.1 [87.6 kB]
+Get:21 http://us.archive.ubuntu.com/ubuntu noble-updates/main amd64 zlib1g-dev amd64 1:1.3.dfsg-3.1ubuntu2.2 [894 kB]
+Get:22 http://us.archive.ubuntu.com/ubuntu noble-updates/main amd64 libprotobuf-lite32t64 amd64 3.21.12-8.2ubuntu0.3 [238 kB]
+Get:23 http://us.archive.ubuntu.com/ubuntu noble-updates/main amd64 libprotobuf-dev amd64 3.21.12-8.2ubuntu0.3 [1,413 kB]
+Get:24 http://us.archive.ubuntu.com/ubuntu noble-updates/main amd64 libprotoc32t64 amd64 3.21.12-8.2ubuntu0.3 [683 kB]
+Get:25 http://us.archive.ubuntu.com/ubuntu noble-updates/main amd64 libprotoc-dev amd64 3.21.12-8.2ubuntu0.3 [1,056 kB]
+Get:26 http://us.archive.ubuntu.com/ubuntu noble/main amd64 libre2-10 amd64 20230301-3build1 [168 kB]
+Get:27 http://us.archive.ubuntu.com/ubuntu noble/main amd64 libre2-dev amd64 20230301-3build1 [269 kB]
+Get:28 http://us.archive.ubuntu.com/ubuntu noble/main amd64 libsnappy-dev amd64 1.1.10-1build1 [42.4 kB]
+Get:29 http://us.archive.ubuntu.com/ubuntu noble/universe amd64 libutf8proc3 amd64 2.9.0-1build1 [70.6 kB]
+Get:30 http://us.archive.ubuntu.com/ubuntu noble/universe amd64 libutf8proc-dev amd64 2.9.0-1build1 [74.1 kB]
+Get:31 http://us.archive.ubuntu.com/ubuntu noble/main amd64 libxxhash-dev amd64 0.8.2-2build1 [76.5 kB]
+Get:32 http://us.archive.ubuntu.com/ubuntu noble-updates/main amd64 libzstd-dev amd64 1.5.5+dfsg2-2build1.1 [364 kB]
+Get:33 http://us.archive.ubuntu.com/ubuntu noble/universe amd64 nlohmann-json3-dev all 3.11.3-1 [190 kB]
+Get:34 http://us.archive.ubuntu.com/ubuntu noble/universe amd64 libgrpc29t64 amd64 1.51.1-4.1build5 [2,768 kB]
+Get:35 http://us.archive.ubuntu.com/ubuntu noble-updates/universe amd64 protobuf-compiler amd64 3.21.12-8.2ubuntu0.3 [29.0 kB]
+Get:36 http://us.archive.ubuntu.com/ubuntu noble/universe amd64 protobuf-compiler-grpc amd64 1.51.1-4.1build5 [38.9 kB]
+Get:37 http://us.archive.ubuntu.com/ubuntu noble-updates/main amd64 libcurl3t64-gnutls amd64 8.5.0-2ubuntu10.15 [336 kB]
+Get:38 http://us.archive.ubuntu.com/ubuntu noble/universe amd64 libdouble-conversion3 amd64 3.3.0-1build1 [40.3 kB]
+Get:39 http://us.archive.ubuntu.com/ubuntu noble-updates/main amd64 libpcre2-16-0 amd64 10.42-4ubuntu2.1 [210 kB]
+Get:40 http://us.archive.ubuntu.com/ubuntu noble/universe amd64 libqt5core5t64 amd64 5.15.13+dfsg-1ubuntu1 [2,011 kB]
+Get:41 http://us.archive.ubuntu.com/ubuntu noble/universe amd64 libqt5dbus5t64 amd64 5.15.13+dfsg-1ubuntu1 [220 kB]
+Get:42 http://us.archive.ubuntu.com/ubuntu noble/universe amd64 libqt5network5t64 amd64 5.15.13+dfsg-1ubuntu1 [723 kB]
+Get:43 http://us.archive.ubuntu.com/ubuntu noble/universe amd64 libthrift-0.19.0t64 amd64 0.19.0-2.1build5 [268 kB]
+Get:3 https://packages.apache.org/artifactory/arrow/ubuntu noble/main amd64 libarrow-dev amd64 25.0.1-1 [13.9 MB]
+Get:44 http://us.archive.ubuntu.com/ubuntu noble/universe amd64 libthrift-dev amd64 0.19.0-2.1build5 [462 kB]
+Get:45 http://us.archive.ubuntu.com/ubuntu noble/universe amd64 qttranslations5-l10n all 5.15.13-1 [1,964 kB]
+Get:4 https://packages.apache.org/artifactory/arrow/ubuntu noble/main amd64 libparquet2500 amd64 25.0.1-1 [1,094 kB]
+Get:5 https://packages.apache.org/artifactory/arrow/ubuntu noble/main amd64 libparquet-dev amd64 25.0.1-1 [1,617 kB]
+debconf: unable to initialize frontend: Dialog
+debconf: (Dialog frontend will not work on a dumb terminal, an emacs shell buffer, or without a controlling terminal.)
+debconf: falling back to frontend: Readline
+debconf: unable to initialize frontend: Readline
+debconf: (This frontend requires a controlling tty.)
+debconf: falling back to frontend: Teletype
+dpkg-preconfigure: unable to re-open stdin: 
+Fetched 43.1 MB in 3s (16.1 MB/s)
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 121470 files and directories currently installed.)
+Preparing to unpack .../bzip2_1.0.8-5.1ubuntu0.1_amd64.deb ...
+Unpacking bzip2 (1.0.8-5.1ubuntu0.1) over (1.0.8-5.1build0.1) ...
+Preparing to unpack .../libbz2-1.0_1.0.8-5.1ubuntu0.1_amd64.deb ...
+Unpacking libbz2-1.0:amd64 (1.0.8-5.1ubuntu0.1) over (1.0.8-5.1build0.1) ...
+Setting up libbz2-1.0:amd64 (1.0.8-5.1ubuntu0.1) ...
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 121470 files and directories currently installed.)
+Preparing to unpack .../zlib1g_1%3a1.3.dfsg-3.1ubuntu2.2_amd64.deb ...
+Unpacking zlib1g:amd64 (1:1.3.dfsg-3.1ubuntu2.2) over (1:1.3.dfsg-3.1ubuntu2.1) ...
+Setting up zlib1g:amd64 (1:1.3.dfsg-3.1ubuntu2.2) ...
+Selecting previously unselected package bzip2-doc.
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 121470 files and directories currently installed.)
+Preparing to unpack .../00-bzip2-doc_1.0.8-5.1ubuntu0.1_all.deb ...
+Unpacking bzip2-doc (1.0.8-5.1ubuntu0.1) ...
+Preparing to unpack .../01-curl_8.5.0-2ubuntu10.15_amd64.deb ...
+Unpacking curl (8.5.0-2ubuntu10.15) over (8.5.0-2ubuntu10.12) ...
+Preparing to unpack .../02-libcurl4t64_8.5.0-2ubuntu10.15_amd64.deb ...
+Unpacking libcurl4t64:amd64 (8.5.0-2ubuntu10.15) over (8.5.0-2ubuntu10.12) ...
+Selecting previously unselected package libabsl20220623t64:amd64.
+Preparing to unpack .../03-libabsl20220623t64_20220623.1-3.1ubuntu3.2_amd64.deb ...
+Unpacking libabsl20220623t64:amd64 (20220623.1-3.1ubuntu3.2) ...
+Selecting previously unselected package libabsl-dev:amd64.
+Preparing to unpack .../04-libabsl-dev_20220623.1-3.1ubuntu3.2_amd64.deb ...
+Unpacking libabsl-dev:amd64 (20220623.1-3.1ubuntu3.2) ...
+Selecting previously unselected package libprotobuf32t64:amd64.
+Preparing to unpack .../05-libprotobuf32t64_3.21.12-8.2ubuntu0.3_amd64.deb ...
+Unpacking libprotobuf32t64:amd64 (3.21.12-8.2ubuntu0.3) ...
+Selecting previously unselected package libsnappy1v5:amd64.
+Preparing to unpack .../06-libsnappy1v5_1.1.10-1build1_amd64.deb ...
+Unpacking libsnappy1v5:amd64 (1.1.10-1build1) ...
+Selecting previously unselected package libarrow2500:amd64.
+Preparing to unpack .../07-libarrow2500_25.0.1-1_amd64.deb ...
+Unpacking libarrow2500:amd64 (25.0.1-1) ...
+Selecting previously unselected package libbrotli-dev:amd64.
+Preparing to unpack .../08-libbrotli-dev_1.1.0-2build2_amd64.deb ...
+Unpacking libbrotli-dev:amd64 (1.1.0-2build2) ...
+Selecting previously unselected package libbz2-dev:amd64.
+Preparing to unpack .../09-libbz2-dev_1.0.8-5.1ubuntu0.1_amd64.deb ...
+Unpacking libbz2-dev:amd64 (1.0.8-5.1ubuntu0.1) ...
+Selecting previously unselected package libcares2:amd64.
+Preparing to unpack .../10-libcares2_1.27.0-1.0ubuntu1_amd64.deb ...
+Unpacking libcares2:amd64 (1.27.0-1.0ubuntu1) ...
+Selecting previously unselected package libc-ares-dev:amd64.
+Preparing to unpack .../11-libc-ares-dev_1.27.0-1.0ubuntu1_amd64.deb ...
+Unpacking libc-ares-dev:amd64 (1.27.0-1.0ubuntu1) ...
+Selecting previously unselected package libcurl4-openssl-dev:amd64.
+Preparing to unpack .../12-libcurl4-openssl-dev_8.5.0-2ubuntu10.15_amd64.deb ...
+Unpacking libcurl4-openssl-dev:amd64 (8.5.0-2ubuntu10.15) ...
+Selecting previously unselected package liblz4-dev:amd64.
+Preparing to unpack .../13-liblz4-dev_1.9.4-1build1.1_amd64.deb ...
+Unpacking liblz4-dev:amd64 (1.9.4-1build1.1) ...
+Selecting previously unselected package zlib1g-dev:amd64.
+Preparing to unpack .../14-zlib1g-dev_1%3a1.3.dfsg-3.1ubuntu2.2_amd64.deb ...
+Unpacking zlib1g-dev:amd64 (1:1.3.dfsg-3.1ubuntu2.2) ...
+Selecting previously unselected package libprotobuf-lite32t64:amd64.
+Preparing to unpack .../15-libprotobuf-lite32t64_3.21.12-8.2ubuntu0.3_amd64.deb ...
+Unpacking libprotobuf-lite32t64:amd64 (3.21.12-8.2ubuntu0.3) ...
+Selecting previously unselected package libprotobuf-dev:amd64.
+Preparing to unpack .../16-libprotobuf-dev_3.21.12-8.2ubuntu0.3_amd64.deb ...
+Unpacking libprotobuf-dev:amd64 (3.21.12-8.2ubuntu0.3) ...
+Selecting previously unselected package libprotoc32t64:amd64.
+Preparing to unpack .../17-libprotoc32t64_3.21.12-8.2ubuntu0.3_amd64.deb ...
+Unpacking libprotoc32t64:amd64 (3.21.12-8.2ubuntu0.3) ...
+Selecting previously unselected package libprotoc-dev:amd64.
+Preparing to unpack .../18-libprotoc-dev_3.21.12-8.2ubuntu0.3_amd64.deb ...
+Unpacking libprotoc-dev:amd64 (3.21.12-8.2ubuntu0.3) ...
+Selecting previously unselected package libre2-10:amd64.
+Preparing to unpack .../19-libre2-10_20230301-3build1_amd64.deb ...
+Unpacking libre2-10:amd64 (20230301-3build1) ...
+Selecting previously unselected package libre2-dev:amd64.
+Preparing to unpack .../20-libre2-dev_20230301-3build1_amd64.deb ...
+Unpacking libre2-dev:amd64 (20230301-3build1) ...
+Selecting previously unselected package libsnappy-dev:amd64.
+Preparing to unpack .../21-libsnappy-dev_1.1.10-1build1_amd64.deb ...
+Unpacking libsnappy-dev:amd64 (1.1.10-1build1) ...
+Selecting previously unselected package libutf8proc3:amd64.
+Preparing to unpack .../22-libutf8proc3_2.9.0-1build1_amd64.deb ...
+Unpacking libutf8proc3:amd64 (2.9.0-1build1) ...
+Selecting previously unselected package libutf8proc-dev:amd64.
+Preparing to unpack .../23-libutf8proc-dev_2.9.0-1build1_amd64.deb ...
+Unpacking libutf8proc-dev:amd64 (2.9.0-1build1) ...
+Selecting previously unselected package libxxhash-dev:amd64.
+Preparing to unpack .../24-libxxhash-dev_0.8.2-2build1_amd64.deb ...
+Unpacking libxxhash-dev:amd64 (0.8.2-2build1) ...
+Selecting previously unselected package libzstd-dev:amd64.
+Preparing to unpack .../25-libzstd-dev_1.5.5+dfsg2-2build1.1_amd64.deb ...
+Unpacking libzstd-dev:amd64 (1.5.5+dfsg2-2build1.1) ...
+Selecting previously unselected package nlohmann-json3-dev.
+Preparing to unpack .../26-nlohmann-json3-dev_3.11.3-1_all.deb ...
+Unpacking nlohmann-json3-dev (3.11.3-1) ...
+Selecting previously unselected package libgrpc29t64:amd64.
+Preparing to unpack .../27-libgrpc29t64_1.51.1-4.1build5_amd64.deb ...
+Unpacking libgrpc29t64:amd64 (1.51.1-4.1build5) ...
+Selecting previously unselected package protobuf-compiler.
+Preparing to unpack .../28-protobuf-compiler_3.21.12-8.2ubuntu0.3_amd64.deb ...
+Unpacking protobuf-compiler (3.21.12-8.2ubuntu0.3) ...
+Selecting previously unselected package protobuf-compiler-grpc.
+Preparing to unpack .../29-protobuf-compiler-grpc_1.51.1-4.1build5_amd64.deb ...
+Unpacking protobuf-compiler-grpc (1.51.1-4.1build5) ...
+Selecting previously unselected package libarrow-dev:amd64.
+Preparing to unpack .../30-libarrow-dev_25.0.1-1_amd64.deb ...
+Unpacking libarrow-dev:amd64 (25.0.1-1) ...
+Preparing to unpack .../31-libcurl3t64-gnutls_8.5.0-2ubuntu10.15_amd64.deb ...
+Unpacking libcurl3t64-gnutls:amd64 (8.5.0-2ubuntu10.15) over (8.5.0-2ubuntu10.12) ...
+Selecting previously unselected package libdouble-conversion3:amd64.
+Preparing to unpack .../32-libdouble-conversion3_3.3.0-1build1_amd64.deb ...
+Unpacking libdouble-conversion3:amd64 (3.3.0-1build1) ...
+Selecting previously unselected package libpcre2-16-0:amd64.
+Preparing to unpack .../33-libpcre2-16-0_10.42-4ubuntu2.1_amd64.deb ...
+Unpacking libpcre2-16-0:amd64 (10.42-4ubuntu2.1) ...
+Selecting previously unselected package libqt5core5t64:amd64.
+Preparing to unpack .../34-libqt5core5t64_5.15.13+dfsg-1ubuntu1_amd64.deb ...
+Unpacking libqt5core5t64:amd64 (5.15.13+dfsg-1ubuntu1) ...
+Selecting previously unselected package libqt5dbus5t64:amd64.
+Preparing to unpack .../35-libqt5dbus5t64_5.15.13+dfsg-1ubuntu1_amd64.deb ...
+Unpacking libqt5dbus5t64:amd64 (5.15.13+dfsg-1ubuntu1) ...
+Selecting previously unselected package libqt5network5t64:amd64.
+Preparing to unpack .../36-libqt5network5t64_5.15.13+dfsg-1ubuntu1_amd64.deb ...
+Unpacking libqt5network5t64:amd64 (5.15.13+dfsg-1ubuntu1) ...
+Selecting previously unselected package libthrift-0.19.0t64:amd64.
+Preparing to unpack .../37-libthrift-0.19.0t64_0.19.0-2.1build5_amd64.deb ...
+Unpacking libthrift-0.19.0t64:amd64 (0.19.0-2.1build5) ...
+Selecting previously unselected package libparquet2500:amd64.
+Preparing to unpack .../38-libparquet2500_25.0.1-1_amd64.deb ...
+Unpacking libparquet2500:amd64 (25.0.1-1) ...
+Selecting previously unselected package libthrift-dev:amd64.
+Preparing to unpack .../39-libthrift-dev_0.19.0-2.1build5_amd64.deb ...
+Unpacking libthrift-dev:amd64 (0.19.0-2.1build5) ...
+Selecting previously unselected package libparquet-dev:amd64.
+Preparing to unpack .../40-libparquet-dev_25.0.1-1_amd64.deb ...
+Unpacking libparquet-dev:amd64 (25.0.1-1) ...
+Selecting previously unselected package qttranslations5-l10n.
+Preparing to unpack .../41-qttranslations5-l10n_5.15.13-1_all.deb ...
+Unpacking qttranslations5-l10n (5.15.13-1) ...
+Setting up libprotobuf-lite32t64:amd64 (3.21.12-8.2ubuntu0.3) ...
+Setting up bzip2-doc (1.0.8-5.1ubuntu0.1) ...
+Setting up libprotobuf32t64:amd64 (3.21.12-8.2ubuntu0.3) ...
+Setting up libdouble-conversion3:amd64 (3.3.0-1build1) ...
+Setting up libzstd-dev:amd64 (1.5.5+dfsg2-2build1.1) ...
+Setting up libre2-10:amd64 (20230301-3build1) ...
+Setting up libcurl4t64:amd64 (8.5.0-2ubuntu10.15) ...
+Setting up libutf8proc3:amd64 (2.9.0-1build1) ...
+Setting up libcurl3t64-gnutls:amd64 (8.5.0-2ubuntu10.15) ...
+Setting up libutf8proc-dev:amd64 (2.9.0-1build1) ...
+Setting up bzip2 (1.0.8-5.1ubuntu0.1) ...
+Setting up libpcre2-16-0:amd64 (10.42-4ubuntu2.1) ...
+Setting up libsnappy1v5:amd64 (1.1.10-1build1) ...
+Setting up libqt5core5t64:amd64 (5.15.13+dfsg-1ubuntu1) ...
+Setting up qttranslations5-l10n (5.15.13-1) ...
+Setting up libcurl4-openssl-dev:amd64 (8.5.0-2ubuntu10.15) ...
+Setting up libcares2:amd64 (1.27.0-1.0ubuntu1) ...
+Setting up libc-ares-dev:amd64 (1.27.0-1.0ubuntu1) ...
+Setting up liblz4-dev:amd64 (1.9.4-1build1.1) ...
+Setting up libarrow2500:amd64 (25.0.1-1) ...
+Setting up libxxhash-dev:amd64 (0.8.2-2build1) ...
+Setting up zlib1g-dev:amd64 (1:1.3.dfsg-3.1ubuntu2.2) ...
+Setting up libabsl20220623t64:amd64 (20220623.1-3.1ubuntu3.2) ...
+Setting up curl (8.5.0-2ubuntu10.15) ...
+Setting up nlohmann-json3-dev (3.11.3-1) ...
+Setting up libprotoc32t64:amd64 (3.21.12-8.2ubuntu0.3) ...
+Setting up libre2-dev:amd64 (20230301-3build1) ...
+Setting up libbrotli-dev:amd64 (1.1.0-2build2) ...
+Setting up libbz2-dev:amd64 (1.0.8-5.1ubuntu0.1) ...
+Setting up libqt5dbus5t64:amd64 (5.15.13+dfsg-1ubuntu1) ...
+Setting up protobuf-compiler (3.21.12-8.2ubuntu0.3) ...
+Setting up libsnappy-dev:amd64 (1.1.10-1build1) ...
+Setting up libqt5network5t64:amd64 (5.15.13+dfsg-1ubuntu1) ...
+Setting up libprotobuf-dev:amd64 (3.21.12-8.2ubuntu0.3) ...
+Setting up libgrpc29t64:amd64 (1.51.1-4.1build5) ...
+Setting up libabsl-dev:amd64 (20220623.1-3.1ubuntu3.2) ...
+Setting up libprotoc-dev:amd64 (3.21.12-8.2ubuntu0.3) ...
+Setting up libthrift-0.19.0t64:amd64 (0.19.0-2.1build5) ...
+Setting up protobuf-compiler-grpc (1.51.1-4.1build5) ...
+Setting up libparquet2500:amd64 (25.0.1-1) ...
+Setting up libthrift-dev:amd64 (0.19.0-2.1build5) ...
+Setting up libarrow-dev:amd64 (25.0.1-1) ...
+Setting up libparquet-dev:amd64 (25.0.1-1) ...
+Processing triggers for man-db (2.12.0-4build2) ...
+Processing triggers for install-info (7.1-3build2) ...
+Processing triggers for libc-bin (2.39-0ubuntu8.9) ...
+debconf: unable to initialize frontend: Dialog
+debconf: (Dialog frontend will not work on a dumb terminal, an emacs shell buffer, or without a controlling terminal.)
+debconf: falling back to frontend: Readline
+debconf: unable to initialize frontend: Readline
+debconf: (This frontend requires a controlling tty.)
+debconf: falling back to frontend: Teletype
+
+Running kernel seems to be up-to-date.
+
+The processor microcode seems to be up-to-date.
+
+Restarting services...
+ systemctl restart fwupd.service packagekit.service polkit.service postgresql@16-main.service rsyslog.service ssh.service udisks2.service upower.service
+
+Service restarts being deferred:
+ /etc/needrestart/restart.d/dbus.service
+ systemctl restart getty@tty1.service
+ systemctl restart networkd-dispatcher.service
+ systemctl restart serial-getty@ttyS0.service
+ systemctl restart systemd-logind.service
+ systemctl restart unattended-upgrades.service
+
+No containers need to be restarted.
+
+User sessions running outdated binaries:
+ linyu66 @ session #124: sshd[17911]
+ linyu66 @ user manager service: systemd[16389]
+
+No VM guests are running outdated hypervisor (qemu) binaries on this host.
+Cloning into '/opt/parquet_fdw'...
+g++ -Wall -Wpointer-arith -Wendif-labels -Wmissing-format-attribute -Wimplicit-fallthrough=3 -Wcast-function-type -Wshadow=compatible-local -Wformat-security -fno-strict-aliasing -fwrapv -fexcess-precision=standard -g -g -O2 -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -flto=auto -ffat-lto-objects -fstack-protector-strong -fstack-clash-protection -Wformat -Werror=format-security -fcf-protection -fdebug-prefix-map=/build/postgresql-16-binaries-noble-amd64/postgresql-16-16.15=/usr/src/postgresql-16-16.15-1.pgdg24.04+2 -std=c++20 -O3 -fPIC -fvisibility=hidden -fvisibility-inlines-hidden -I. -I./ -I/usr/include/postgresql/16/server -I/usr/include/postgresql/internal -Wdate-time -D_FORTIFY_SOURCE=3 -D_GNU_SOURCE  -I/usr/include/libxml2   -c -o src/common.o src/common.cpp
+g++ -Wall -Wpointer-arith -Wendif-labels -Wmissing-format-attribute -Wimplicit-fallthrough=3 -Wcast-function-type -Wshadow=compatible-local -Wformat-security -fno-strict-aliasing -fwrapv -fexcess-precision=standard -g -g -O2 -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -flto=auto -ffat-lto-objects -fstack-protector-strong -fstack-clash-protection -Wformat -Werror=format-security -fcf-protection -fdebug-prefix-map=/build/postgresql-16-binaries-noble-amd64/postgresql-16-16.15=/usr/src/postgresql-16-16.15-1.pgdg24.04+2 -std=c++20 -O3 -fPIC -fvisibility=hidden -fvisibility-inlines-hidden -I. -I./ -I/usr/include/postgresql/16/server -I/usr/include/postgresql/internal -Wdate-time -D_FORTIFY_SOURCE=3 -D_GNU_SOURCE  -I/usr/include/libxml2   -c -o src/reader.o src/reader.cpp
+src/reader.cpp: In member function ‘virtual void DefaultParquetReader::open()’:
+src/reader.cpp:835:50: warning: ‘static arrow::Status parquet::arrow::FileReader::Make(arrow::MemoryPool*, std::unique_ptr<parquet::ParquetFileReader>, std::unique_ptr<parquet::arrow::FileReader>*)’ is deprecated: Deprecated in 23.0.0. Use arrow::Result version instead. [-Wdeprecated-declarations]
+  835 |         status = parquet::arrow::FileReader::Make(
+      |                  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+  836 |                         arrow::default_memory_pool(),
+      |                         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  837 |                         parquet::ParquetFileReader::OpenFile(filename, use_mmap),
+      |                         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  838 |                         &reader);
+      |                         ~~~~~~~~                  
+In file included from src/reader.cpp:3:
+/usr/include/parquet/arrow/reader.h:129:26: note: declared here
+  129 |   static ::arrow::Status Make(::arrow::MemoryPool* pool,
+      |                          ^~~~
+src/reader.cpp: In member function ‘virtual void CachingParquetReader::open()’:
+src/reader.cpp:1075:50: warning: ‘static arrow::Status parquet::arrow::FileReader::Make(arrow::MemoryPool*, std::unique_ptr<parquet::ParquetFileReader>, std::unique_ptr<parquet::arrow::FileReader>*)’ is deprecated: Deprecated in 23.0.0. Use arrow::Result version instead. [-Wdeprecated-declarations]
+ 1075 |         status = parquet::arrow::FileReader::Make(
+      |                  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+ 1076 |                         arrow::default_memory_pool(),
+      |                         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ 1077 |                         parquet::ParquetFileReader::OpenFile(filename, use_mmap),
+      |                         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ 1078 |                         &reader);
+      |                         ~~~~~~~~                  
+/usr/include/parquet/arrow/reader.h:129:26: note: declared here
+  129 |   static ::arrow::Status Make(::arrow::MemoryPool* pool,
+      |                          ^~~~
+g++ -Wall -Wpointer-arith -Wendif-labels -Wmissing-format-attribute -Wimplicit-fallthrough=3 -Wcast-function-type -Wshadow=compatible-local -Wformat-security -fno-strict-aliasing -fwrapv -fexcess-precision=standard -g -g -O2 -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -flto=auto -ffat-lto-objects -fstack-protector-strong -fstack-clash-protection -Wformat -Werror=format-security -fcf-protection -fdebug-prefix-map=/build/postgresql-16-binaries-noble-amd64/postgresql-16-16.15=/usr/src/postgresql-16-16.15-1.pgdg24.04+2 -std=c++20 -O3 -fPIC -fvisibility=hidden -fvisibility-inlines-hidden -I. -I./ -I/usr/include/postgresql/16/server -I/usr/include/postgresql/internal -Wdate-time -D_FORTIFY_SOURCE=3 -D_GNU_SOURCE  -I/usr/include/libxml2   -c -o src/exec_state.o src/exec_state.cpp
+src/exec_state.cpp: In member function ‘virtual Size TrivialExecutionState::estimate_coord_size()’:
+src/exec_state.cpp:48:5: warning: no return statement in function returning non-void [-Wreturn-type]
+   48 |     }
+      |     ^
+g++ -Wall -Wpointer-arith -Wendif-labels -Wmissing-format-attribute -Wimplicit-fallthrough=3 -Wcast-function-type -Wshadow=compatible-local -Wformat-security -fno-strict-aliasing -fwrapv -fexcess-precision=standard -g -g -O2 -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -flto=auto -ffat-lto-objects -fstack-protector-strong -fstack-clash-protection -Wformat -Werror=format-security -fcf-protection -fdebug-prefix-map=/build/postgresql-16-binaries-noble-amd64/postgresql-16-16.15=/usr/src/postgresql-16-16.15-1.pgdg24.04+2 -std=c++20 -O3 -fPIC -fvisibility=hidden -fvisibility-inlines-hidden -I. -I./ -I/usr/include/postgresql/16/server -I/usr/include/postgresql/internal -Wdate-time -D_FORTIFY_SOURCE=3 -D_GNU_SOURCE  -I/usr/include/libxml2   -c -o src/parquet_impl.o src/parquet_impl.cpp
+src/parquet_impl.cpp: In function ‘List* extract_rowgroups_list(const char*, TupleDesc, std::__cxx11::list<RowGroupFilter>&, uint64*, uint64*)’:
+src/parquet_impl.cpp:549:50: warning: ‘static arrow::Status parquet::arrow::FileReader::Make(arrow::MemoryPool*, std::unique_ptr<parquet::ParquetFileReader>, std::unique_ptr<parquet::arrow::FileReader>*)’ is deprecated: Deprecated in 23.0.0. Use arrow::Result version instead. [-Wdeprecated-declarations]
+  549 |         status = parquet::arrow::FileReader::Make(
+      |                  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+  550 |                 arrow::default_memory_pool(),
+      |                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~     
+  551 |                 parquet::ParquetFileReader::OpenFile(filename, false),
+      |                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  552 |                 &reader);
+      |                 ~~~~~~~~                          
+In file included from src/parquet_impl.cpp:15:
+/usr/include/parquet/arrow/reader.h:129:26: note: declared here
+  129 |   static ::arrow::Status Make(::arrow::MemoryPool* pool,
+      |                          ^~~~
+src/parquet_impl.cpp: In function ‘List* extract_parquet_fields(const char*)’:
+src/parquet_impl.cpp:716:50: warning: ‘static arrow::Status parquet::arrow::FileReader::Make(arrow::MemoryPool*, std::unique_ptr<parquet::ParquetFileReader>, std::unique_ptr<parquet::arrow::FileReader>*)’ is deprecated: Deprecated in 23.0.0. Use arrow::Result version instead. [-Wdeprecated-declarations]
+  716 |         status = parquet::arrow::FileReader::Make(
+      |                  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+  717 |                     arrow::default_memory_pool(),
+      |                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 
+  718 |                     parquet::ParquetFileReader::OpenFile(path, false),
+      |                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  719 |                     &reader);
+      |                     ~~~~~~~~                      
+/usr/include/parquet/arrow/reader.h:129:26: note: declared here
+  129 |   static ::arrow::Status Make(::arrow::MemoryPool* pool,
+      |                          ^~~~
+src/parquet_impl.cpp: In function ‘int parquetAcquireSampleRowsFunc(Relation, int, HeapTupleData**, int, double*, double*)’:
+src/parquet_impl.cpp:1740:54: warning: ‘static arrow::Status parquet::arrow::FileReader::Make(arrow::MemoryPool*, std::unique_ptr<parquet::ParquetFileReader>, std::unique_ptr<parquet::arrow::FileReader>*)’ is deprecated: Deprecated in 23.0.0. Use arrow::Result version instead. [-Wdeprecated-declarations]
+ 1740 |             status = parquet::arrow::FileReader::Make(
+      |                      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+ 1741 |                         arrow::default_memory_pool(),
+      |                         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 
+ 1742 |                         parquet::ParquetFileReader::OpenFile(filename, false),
+      |                         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ 1743 |                         &reader);
+      |                         ~~~~~~~~                      
+/usr/include/parquet/arrow/reader.h:129:26: note: declared here
+  129 |   static ::arrow::Status Make(::arrow::MemoryPool* pool,
+      |                          ^~~~
+gcc -Wall -Wmissing-prototypes -Wpointer-arith -Wdeclaration-after-statement -Werror=vla -Wendif-labels -Wmissing-format-attribute -Wimplicit-fallthrough=3 -Wcast-function-type -Wshadow=compatible-local -Wformat-security -fno-strict-aliasing -fwrapv -fexcess-precision=standard -Wno-format-truncation -Wno-stringop-truncation -g -g -O2 -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -flto=auto -ffat-lto-objects -fstack-protector-strong -fstack-clash-protection -Wformat -Werror=format-security -fcf-protection -fno-omit-frame-pointer -fPIC -fvisibility=hidden -I. -I./ -I/usr/include/postgresql/16/server -I/usr/include/postgresql/internal -Wdate-time -D_FORTIFY_SOURCE=3 -D_GNU_SOURCE  -I/usr/include/libxml2   -c -o src/parquet_fdw.o src/parquet_fdw.c
+gcc -Wall -Wmissing-prototypes -Wpointer-arith -Wdeclaration-after-statement -Werror=vla -Wendif-labels -Wmissing-format-attribute -Wimplicit-fallthrough=3 -Wcast-function-type -Wshadow=compatible-local -Wformat-security -fno-strict-aliasing -fwrapv -fexcess-precision=standard -Wno-format-truncation -Wno-stringop-truncation -g -g -O2 -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -flto=auto -ffat-lto-objects -fstack-protector-strong -fstack-clash-protection -Wformat -Werror=format-security -fcf-protection -fno-omit-frame-pointer -fPIC -fvisibility=hidden -shared -o parquet_fdw.so src/common.o src/reader.o src/exec_state.o src/parquet_impl.o src/parquet_fdw.o -L/usr/lib/x86_64-linux-gnu  -Wl,-Bsymbolic-functions -flto=auto -ffat-lto-objects -Wl,-z,relro -Wl,-z,now  -Wl,--as-needed -fvisibility=hidden -lm -lstdc++ -lparquet -larrow 
+/bin/mkdir -p '/usr/lib/postgresql/16/lib'
+/bin/mkdir -p '/usr/share/postgresql/16/extension'
+/bin/mkdir -p '/usr/share/postgresql/16/extension'
+/usr/bin/install -c -m 755  parquet_fdw.so '/usr/lib/postgresql/16/lib/parquet_fdw.so'
+/usr/bin/install -c -m 644 .//parquet_fdw.control '/usr/share/postgresql/16/extension/'
+/usr/bin/install -c -m 644 .//parquet_fdw--0.1.sql .//parquet_fdw--0.1--0.2.sql  '/usr/share/postgresql/16/extension/'
+Done installing parquet_fdw on worker!
