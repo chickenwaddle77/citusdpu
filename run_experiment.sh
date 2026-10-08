@@ -8,13 +8,15 @@ echo "============================================="
 # Check dependencies
 echo "Checking dependencies..."
 if ! command -v dstat &> /dev/null; then
-    echo "Error: dstat is not installed. Please install it by running: sudo apt-get install -y dstat"
-    exit 1
+    echo "dstat is not installed. Installing it now..."
+    sudo apt-get update
+    sudo apt-get install -y dstat
 fi
 
 if ! python3 -c "import psycopg2" &> /dev/null; then
-    echo "Error: psycopg2 is not installed. Please install it by running: sudo apt-get install -y python3-psycopg2"
-    exit 1
+    echo "python3-psycopg2 is not installed. Installing it now..."
+    sudo apt-get update
+    sudo apt-get install -y python3-psycopg2
 fi
 echo "Dependencies met. Proceeding..."
 
