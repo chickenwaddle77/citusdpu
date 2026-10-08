@@ -5,6 +5,19 @@ echo "============================================="
 echo " Starting DPU Baseline Benchmark Experiment"
 echo "============================================="
 
+# Check dependencies
+echo "Checking dependencies..."
+if ! command -v dstat &> /dev/null; then
+    echo "Error: dstat is not installed. Please install it by running: sudo apt-get install -y dstat"
+    exit 1
+fi
+
+if ! python3 -c "import psycopg2" &> /dev/null; then
+    echo "Error: psycopg2 is not installed. Please install it by running: sudo apt-get install -y python3-psycopg2"
+    exit 1
+fi
+echo "Dependencies met. Proceeding..."
+
 # Ensure directories exist
 sudo mkdir -p /mnt/dataset
 sudo chown -R $USER /mnt/dataset
